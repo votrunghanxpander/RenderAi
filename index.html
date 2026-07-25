@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BimSpeed AI APP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/react-photo-view/dist/react-photo-view.css">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #F4F3EE;
+        color: #1F2937;
+      }
+      /* Animations */
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fadeIn {
+        animation: fadeIn 0.8s ease-out forwards;
+        opacity: 0;
+      }
+    </style>
+    <script>
+      // Polyfill for process.env to avoid ReferenceError in browser
+      if (typeof process === 'undefined') {
+        window.process = { env: {} };
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-dom": "https://aistudiocdn.com/react-dom@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react-photo-view": "https://esm.sh/react-photo-view@1.2.6?external=react,react-dom",
+    "react-player": "https://esm.sh/react-player@2.16.0?external=react,react-dom",
+    "react-easy-crop": "https://esm.sh/react-easy-crop@5.0.6?external=react,react-dom",
+    "path": "https://aistudiocdn.com/path@^0.12.7",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
+    "vite": "https://aistudiocdn.com/vite@^7.2.4",
+    "fs": "https://aistudiocdn.com/fs@^0.0.1-security",
+    "url": "https://aistudiocdn.com/url@^0.11.4",
+    "javascript-obfuscator": "https://aistudiocdn.com/javascript-obfuscator@^4.1.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

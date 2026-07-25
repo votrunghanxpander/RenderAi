@@ -1,0 +1,40 @@
+import React from 'react';
+
+// Component Types
+export const AddPeopleView: React.ComponentType;
+export const Button: React.ComponentType<{
+  variant?: 'primary' | 'secondary' | 'outline';
+  isLoading?: boolean;
+} & React.ButtonHTMLAttributes<HTMLButtonElement>>;
+export const CameraAngleView: React.ComponentType;
+export const ChangeLightingView: React.ComponentType;
+export const Elevation2DView: React.ComponentType;
+export const ExpandView: React.ComponentType;
+export const ExteriorRenderView: React.ComponentType;
+export const FengShuiView: React.ComponentType;
+export const FurnitureEditor: React.ComponentType;
+export const HomePage: React.ComponentType<{ onEnterApp: () => void }>;
+export const ImageComparison: React.ComponentType;
+export const ImageEditor: React.ComponentType;
+export const ImageUploader: React.ComponentType;
+export const InsertBuildingView: React.ComponentType;
+export const InteriorRenderView: React.ComponentType;
+export const LeadForm: React.ComponentType;
+export const MaterialEditor: React.ComponentType;
+export const MoodboardView: React.ComponentType;
+export const PresentationBoardView: React.ComponentType;
+export const PlanningRenderView: React.ComponentType;
+export const RenderView: React.ComponentType;
+export const RealEstatePosterView: React.ComponentType;
+export const AnnotatedRenderView: React.ComponentType;
+export const ResultGallery: React.ComponentType;
+export const Sidebar: React.ComponentType<{ currentView: any; onChangeView: (view: any) => void }>;
+export const SettingsFab: React.ComponentType<{ currentModel: string; onModelChange: (model: string) => void }>;
+export const UpscaleView: React.ComponentType;
+export const AnalysisView: React.ComponentType;
+export const VideoGenerator: React.ComponentType;
+export const VirtualTourView: React.ComponentType;
+export const FloorPlanTo3DView: React.ComponentType;
+export const TechnicalDrawingView: React.ComponentType;
+export const SectionPerspectiveView: React.ComponentType;
+export const HistoryView: React.ComponentType;
